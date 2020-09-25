@@ -4,7 +4,13 @@ import Money from './workPlace/Money'
 import Getup from './workPlace/Getup'
 
 
-function WorkPlace(){
+function WorkPlace(props){
+    
+    const { match, location } = props;
+
+    console.log(match)
+    console.log(location)
+    
     return (
         <div>
             <div className="topNav">
