@@ -3,6 +3,7 @@ import { BrowserRouter, Route, NavLink, Switch  } from "react-router-dom";
 import Index from './pages/Index'
 import Video from './pages/Video'
 import WorkPlace from './pages/WorkPlace'
+import NotFound from './NotFound'
 import './index.css'
 
 function AppRouter() {
@@ -23,6 +24,7 @@ function AppRouter() {
                 <Route path="/home" exact component={Index} />
                 <Route path="/video/" component={Video} />
                 <Route path="/workplace/" component={WorkPlace} />
+                <Route component={NotFound} />
               </Switch>  
             </div>
           </div>
