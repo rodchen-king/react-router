@@ -20,12 +20,12 @@ function AppRouter() {
             </div>
             
             <div className="rightMain">
-              <Switch>
+              {/* <Switch> */}
                 <Route path="/home" exact component={Index} />
                 <Route path="/video/" component={Video} />
                 <Route path="/workplace/:id" component={WorkPlace} />
                 <Route component={NotFound} />
-              </Switch>  
+              {/* </Switch>   */}
             </div>
           </div>
       </BrowserRouter>
