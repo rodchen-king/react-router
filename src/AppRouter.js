@@ -24,7 +24,7 @@ function AppRouter() {
                 <Route path="/home" exact component={Index} />
                 <Route path="/video/" component={Video} />
                 <Route path="/workplace/:id" component={WorkPlace} />
-                <Route component={NotFound} />
+                <Route name='404' component={NotFound} />
               {/* </Switch>   */}
             </div>
           </div>
